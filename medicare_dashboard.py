@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from vega_datasets import data
 import altair as alt
 
 st.set_page_config(layout="wide")
