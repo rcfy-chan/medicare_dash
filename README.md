@@ -1,55 +1,32 @@
-# Project Management Dashboard
+# Medicare Part B Dashboard
 
-This repository contains a Streamlit application for visualizing and managing project data. The dashboard provides various charts and metrics to help track project status, duration, priority, and more.
-
-## Overview
-
-The Project Management Dashboard offers the following features:
-- Total number of projects, average duration, median duration, and delayed projects count.
-- Donut charts displaying the distribution of projects by priority and status.
-- Scatter plot and bar charts showing the number of projects assigned to individuals and project components.
-- Gantt chart to visualize the timeline of projects based on their status and priority.
+This Streamlit web application provides a dashboard for analyzing Medicare Part B data. It offers insights into provider statistics, specialty analysis, and geographical distribution of Medicare services.
 
 ## Features
 
-- **Metrics:** Display key project metrics such as total projects, delayed projects, average duration, and median duration.
-- **Donut Charts:** Visual representation of project distribution by priority and status.
-- **Scatter Plot and Bar Charts:** Analysis of projects by responsible individuals and project components.
-- **Gantt Chart:** Visual timeline of projects filtered by status, year range, and priority.
+- **Provider Analysis**: View metrics such as total providers, total charges, total services provided, and total beneficiaries. Analyze top providers by total charges and distribution of charges by provider type.
+  
+- **Speciality Analysis**: Explore speciality-wise analysis including total specialities, most common speciality, and highest total charges. View a Pareto chart of specialities by total charges and scatter plot of total charges vs median charges by speciality.
 
-## Setup
+- **Maps**: Visualize geographical distribution of providers and Medicare services. See provider count and unique services per day across different states.
 
-### Prerequisites
+## Requirements
 
-Ensure you have the following installed:
-- Python 3.7+
-- Streamlit
-- Pandas
-- Altair
+Make sure you have Python installed. Install the required Python packages using the following command:
 
-### Installation
+## Usage
 
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/yourusername/project-management-dashboard.git
-    cd project-management-dashboard
-    ```
+1. Clone this repository.
+2. Install the required packages as mentioned above.
+3. Run the Streamlit app using the following command:
+4. Access the dashboard in your browser via the provided URL.
 
-2. Create and activate a virtual environment (optional but recommended):
-    ```sh
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
+## Contributing
 
-3. Install the required dependencies:
-    ```sh
-    pip install -r requirements.txt
-    ```
+Contributions are welcome! Please feel free to open issues or submit pull requests to improve this dashboard.
 
-4. Place your `PM_Data.csv` file in the root directory of the project.
+## License
 
-### Running the Application
+This project is licensed under the [MIT License](LICENSE).
 
-To run the Streamlit application, use the following command:
-```sh
-streamlit run app.py
+
